@@ -11,4 +11,10 @@ class Quotes
   def random_quote
     @quote_set = @quote_set.sample
   end
+
+  private
+  def make_request
+    uri = URI('https://type.fit/api/quotes')
+    JSON.parse(Net::HTTP.get(uri))
+  end
 end
