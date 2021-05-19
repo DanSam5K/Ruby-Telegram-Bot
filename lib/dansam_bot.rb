@@ -27,8 +27,10 @@ class Amazingbot
         when '/normaljoke'
           normal= Jokes.new
           bot.api.send_message(chat_id: message.chat.id, text: normal.random_jokes)
-
-        
+        else message.text != '/programmingjoke' || '/inspirationalquotes' || '/normaljoke'
+             alert = "sorry,we have only '/quotes', '/programmingjoke','/normaljoke' at the moment"
+             bot.api.send_message(chat_id: message.chat.id, text: alert)
+        end
       end
     end
   end
