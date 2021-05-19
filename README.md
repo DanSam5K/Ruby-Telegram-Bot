@@ -50,8 +50,11 @@ Clone the repo in your local folder where you want to run it<br>
 `https://github.com/DanSam5K/Ruby-Telegram-Bot.git`.<br>
 **Step 2**<br>
 After cloning cd into project folder <br>
-`$ cd Ruby-Telegram-Bot`<br>
-**Step 2**<br>
+`$ cd Ruby-Telegram-Bot`<br> 
+create a `config.rb` in the project root directory You will need Telegram access Token API
+create a variable inside the config.rb file  with name
+` TELEGRAM_TOKEN = 'APIKEY' ` and asign your APIKEY to the variable
+**Step 3**<br>
 Run `bundle install` to install the gems from the `Gemfile`.<br>
 **Step 3**<br>
 Run `bin/main.rb` to start the bot.<br>
