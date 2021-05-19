@@ -11,6 +11,10 @@ class Amazingbot
           bot.api.send_message(chat_id: message.chat.id, text: "This bot is designed to interract,
         #{message.from.first_name} and provide ineteresting and amazing quotes with rib cracking jokes to ease your mood enter /start to see how you can get the bot working as based on your preference.
         Designed by DanSam a Microverse project on Ruby")
+        when '/start'
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello,I'm JUST a bot, Welcome,
+        #{message.from.first_name} press /normaljoke to get chuckling jokes to ease you and /quotes
+        for inspirational and success quotes and for programmers I also have some amazing jokes for type /programmersjoke and you can enter /quit to end")
         
       end
     end
