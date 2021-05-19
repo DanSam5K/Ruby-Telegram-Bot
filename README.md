@@ -15,7 +15,16 @@
 - Rspec
 - VsCode
 
-## How to Run Tests
+## Commands to Run the Bot
+This Bot has 6 commands
+- [x] /info - Gives you a brief information about the both and how to interract with the bot
+- [x] /start - It gives the instruction on  how to use othe commands to get the your info.
+- [x] /quit  - persuades you not to quit".
+- [x] /programmingjoke - It gives you a random selected programming joke related to any topic of programming.
+- [x] /quotes - It gives a random quote related to programming.
+- [x] /normaljoke - It gives a random quote related to programming.
+
+### How to Run Tests
 
 - You need to run 
 ```
@@ -30,12 +39,53 @@ $ bundle install or bundle
 $ rspec  and see all test cases with rspec passes
 ```
 
-# Commands to Run the Bot
-This Bot has five commands
-- [x] /info - Gives you a brief information about the both and how to interract with the bot
-- [x] /start - It gives the instruction on  how to use othe commands.
-- [x] /quit  - persuades you not to quit".
-- [x] /programmingjoke - It gives you a random selected programming joke related to any topic of programming.
-- [x] /quote - It gives a random quote related to programming.
+## Install and Run the Bot Locally
 
+In order to run the Bot, you need to install RUBY in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it.
+
+## When you have Ruby Installed in your System, please follow bellow mentioned steps to run the Bot
+
+**Step 1**<br>
+Clone the repo in your local folder where you want to run it<br>
+`https://github.com/DanSam5K/Ruby-Telegram-Bot.git`.<br>
+**Step 2**<br>
+After cloning cd into project folder <br>
+`$ cd Ruby-Telegram-Bot`<br>
+**Step 2**<br>
+Run `bundle install` to install the gems from the `Gemfile`.<br>
+**Step 3**<br>
+Run `bin/main.rb` to start the bot.<br>
+**Step 4**<br>
+You can use the commands defined in the [Available commands section](#Commands-to-Run-the-Bot) defined above.<br>
+
+#### This Bot is Live Now. You can click [Here](https://t.me/ds_joker_bot) to Play with Bot
+
+## Authors
+
+👤 **Daniel Samuel**
+
+- GitHub: [@DanSam5K](https://github.com/DanSam5K)
+- Twitter: [@_dan_sam](https://twitter.com/_dan_sam)
+- LinkedIn: [DanSam](https://www.linkedin.com/in/dansamuel/)
+
+## 🤝 Contributing
+
+- If you want to contribute or have a feature to add.
+- Go to the repo
+- Open a pull request
+or
+- Feel free with a click [issues page](https://github.com/Ruby-Telegram-Bot/issues).
+
+Contributions, issues and feature requests are welcome!
+
+## Show Your Support
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Project inspired by Microverse Program
+
+## 📝 License
+
+This project is [MIT](https://mit-license.org/) licensed.
 
