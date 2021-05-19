@@ -15,6 +15,9 @@ class Amazingbot
           bot.api.send_message(chat_id: message.chat.id, text: "Hello,I'm JUST a bot, Welcome,
         #{message.from.first_name} press /normaljoke to get chuckling jokes to ease you and /quotes
         for inspirational and success quotes and for programmers I also have some amazing jokes for type /programmersjoke and you can enter /quit to end")
+        when '/quit'
+          bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
+        i wish you did not press that,you can reconsider!!,bye anyways")
         
       end
     end
