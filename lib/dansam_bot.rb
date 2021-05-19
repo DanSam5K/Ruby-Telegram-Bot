@@ -18,6 +18,9 @@ class Amazingbot
         when '/quit'
           bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
         i wish you did not press that,you can reconsider!!,bye anyways")
+        when '/programmersjoke'
+          joke = Jokes.new
+          bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
         
       end
     end
