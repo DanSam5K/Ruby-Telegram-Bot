@@ -21,6 +21,13 @@ class Amazingbot
         when '/programmersjoke'
           joke = Jokes.new
           bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
+        when '/quotes'
+          quote = Quotes.new
+          bot.api.send_message(chat_id: message.chat.id, text: quote.random_quotes)
+        when '/normaljoke'
+          normal= Jokes.new
+          bot.api.send_message(chat_id: message.chat.id, text: normal.random_jokes)
+
         
       end
     end
