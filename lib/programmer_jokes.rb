@@ -1,6 +1,6 @@
 require_relative './helper_method'
 
-class Programmers
+class Programmer
     include Methods
     attr_reader :jokes
     def initialize
