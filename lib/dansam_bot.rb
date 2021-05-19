@@ -1,10 +1,14 @@
-
+require 'telegram/bot'
+require_relative './amazing_quotes'
+require_relative './normal_jokes'
+require_relative './programmer_jokes'
+require_relative '../config'
 
 class Amazingbot
   attr_reader :text
 
   def initialize
-    Telegram::Bot::Client.run(TOKEN_KEY) do |bot|
+    Telegram::Bot::Client.run(TELEGRAM_TOKEN) do |bot|
       bot.listen do |message|
         case message.text
         when '/info'
@@ -19,13 +23,13 @@ class Amazingbot
           bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
         i wish you did not press that,you can reconsider!!,bye anyways")
         when '/programmersjoke'
-          joke = Jokes.new
+          joke = Programmers.new
           bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
         when '/quotes'
           quote = Quotes.new
           bot.api.send_message(chat_id: message.chat.id, text: quote.random_quotes)
         when '/normaljoke'
-          normal= Jokes.new
+          normal = Normal.new
           bot.api.send_message(chat_id: message.chat.id, text: normal.random_jokes)
         else message.text != '/programmingjoke' || '/inspirationalquotes' || '/normaljoke'
              alert = "sorry,we have only '/quotes', '/programmingjoke','/normaljoke' at the moment"
