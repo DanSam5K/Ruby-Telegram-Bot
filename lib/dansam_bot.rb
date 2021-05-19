@@ -2,7 +2,7 @@ require 'telegram/bot'
 require_relative './amazing_quotes'
 require_relative './normal_jokes'
 require_relative './programmer_jokes'
-require_relative '../config'
+# require_relative '../config'
 
 class Amazingbot
   attr_reader :text
