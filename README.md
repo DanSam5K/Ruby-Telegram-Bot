@@ -8,6 +8,8 @@
 - simply search for 'Amazingbot', Chosen bot or @ds_joker_bot.
 - This bot behaves in accepting  commands and returning jokes, quotes or programming jokes and mood concerning programming at random.
 
+ ![screenshot](./images/botscreenshot.png)
+
 ## Built With
 
 - Ruby
@@ -53,12 +55,13 @@ After cloning cd into project folder <br>
 `$ cd Ruby-Telegram-Bot`<br> 
 create a `config.rb` in the project root directory You will need Telegram access Token API
 create a variable inside the config.rb file  with name
-` TELEGRAM_TOKEN = 'APIKEY' ` and asign your APIKEY to the variable
-**Step 3**<br>
+` TELEGRAM_TOKEN = 'APIKEY' ` and asign your APIKEY to the variable<br>
+then uncomment the `# require_relative '../config'` inside `dansam_bot.rb` file <br>
+**Step 3**<br> 
 Run `bundle install` to install the gems from the `Gemfile`.<br>
-**Step 3**<br>
-Run `bin/main.rb` to start the bot.<br>
 **Step 4**<br>
+Run `bin/main.rb` to start the bot.<br>
+**Step 5**<br>
 You can use the commands defined in the [Available commands section](#Commands-to-Run-the-Bot) defined above.<br>
 
 #### This Bot is Live Now. You can click [Here](https://t.me/ds_joker_bot) to Play with Bot
