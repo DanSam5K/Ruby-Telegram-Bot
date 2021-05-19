@@ -7,7 +7,7 @@ require_relative '../config'
 class Amazingbot
   attr_reader :text
 
-  def initialize
+  def initialize # rubocop:disable Metrics/CyclomaticComplexity
     Telegram::Bot::Client.run(TELEGRAM_TOKEN) do |bot|
       bot.listen do |message|
         case message.text
