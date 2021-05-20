@@ -57,11 +57,23 @@ describe Amazingbot do
       it 'makes an instance of Normal Jokes' do
         expect(joke).to be_a Normal
       end
+
+      it 'makes an instance of Normal Jokes not Quotes' do
+        expect(joke).not_to be_a Quotes
+      end
+
+      it 'makes an instance of Normal Jokes not Programmer Jokes' do
+        expect(joke).not_to be_a Programmer
+      end
     end
 
     describe '#random_jokes' do
       it 'it gives back a random Normal joke as a String' do
         expect(joke.random_jokes).to be_a String
+      end
+
+      it 'it gives back a random Normal joke as a String not Numeric' do
+        expect(joke.random_jokes).not_to be_a Numeric
       end
     end
   end
