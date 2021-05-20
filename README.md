@@ -33,15 +33,15 @@ Boot up your terminal and punch in `gem install rspec` to install RSpec. Once th
 
 - You need to run 
 ```
-$ gem install rspec on your system using any code editor of your choice or your terminal
+$ gem install rspec
 ```
-- then run
+- Then run
 ```
 $ bundle install or bundle
 ```
-- you can run tests by running "rspec" in your terminal
+- You can run tests by running "rspec" in your terminal
 ```
-$ rspec  and see all test cases with rspec passes
+$ rspec
 ```
 
 ## Install and Run the Bot Locally
@@ -54,12 +54,7 @@ In order to run the 🤖 Bot, you need to install RUBY in your computer. For win
 Clone the repo in your local folder where you want to run it<br>
 `https://github.com/DanSam5K/Ruby-Telegram-Bot.git`.<br>
 **Step 2**<br>
-After cloning `cd` into project folder <br>
-`$ cd Ruby-Telegram-Bot`<br> 
-create a `config.rb` in the project root directory You will need Telegram access Token API
-create a variable inside the config.rb file  with name <br>
-` TELEGRAM_TOKEN = 'APIKEY' ` and asign your APIKEY to the variable<br>
-then uncomment the `# require_relative '../config'` inside `dansam_bot.rb` file <br>
+After cloning `cd` into project folder `$ cd Ruby-Telegram-Bot` create a `config.rb` in the project root directory You will need Telegram access Token API, create a variable inside the `config.rb` file  with name ` TELEGRAM_TOKEN = 'APIKEY' ` and asign your APIKEY to the variable, then uncomment the `# require_relative '../config'` inside `dansam_bot.rb` file <br>
 **Step 3**<br> 
 Run `bundle install` to install the gems from the `Gemfile`.<br>
 **Step 4**<br>
