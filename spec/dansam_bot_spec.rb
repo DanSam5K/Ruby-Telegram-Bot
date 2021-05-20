@@ -7,10 +7,19 @@ describe Amazingbot do
       it 'makes an instance of quotes' do
         expect(quote).to be_a Quotes
       end
+
+      it 'makes and instance of quotes not joke' do
+        expect(quote).not_to be_a Programmer
+      end
+
     end
     describe '#random_quotes' do
       it 'it gives back a random joke as a String' do
         expect(quote.random_quotes).to be_a String
+      end
+
+      it 'it gives back a random quotes as a String not Numeric' do
+        expect(quote.random_quotes).not_to be_a Numeric
       end
     end
   end
