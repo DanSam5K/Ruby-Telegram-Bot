@@ -2,7 +2,7 @@ require 'telegram/bot'
 require_relative './amazing_quotes'
 require_relative './normal_jokes'
 require_relative './programmer_jokes'
-# require_relative '../config'
+require_relative '../config'
 
 class Amazingbot
   attr_reader :text
@@ -11,18 +11,13 @@ class Amazingbot
     Telegram::Bot::Client.run(TELEGRAM_TOKEN) do |bot|
       bot.listen do |message|
         case message.text
-        when '/info'
-          bot.api.send_message(chat_id: message.chat.id, text: "This bot is designed to interract,
-        #{message.from.first_name} and provide ineteresting and amazing quotes with rib cracking jokes to ease your mood enter /start to see how you can get the bot working as based on your preference.
-        Designed by DanSam a Microverse project on Ruby")
         when '/start'
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello,I'm JUST a bot, Welcome,
-        #{message.from.first_name} press /normaljoke to get chuckling jokes to ease you and /quotes
-        for inspirational and success quotes and for programmers I also have some amazing jokes for type /programmersjoke and you can enter /quit to end")
+          bot.api.send_message(chat_id: message.chat.id, text: "This 🤖 bot is designed specially to serve you Mr. #{message.from.first_name} and provide you with ineteresting and amazing quotes with rib cracking jokes to ease your mood enter /info to see how you can get the bot working as based on your preference.")
+        when '/info'
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, I'm 🤖 Amazingbot, Welcome, #{message.from.first_name} press /normaljoke to get chuckling jokes to ease your day and /quotes for inspirational and success quotes and if you are a programmer? I also have some amazing jokes for you Mr #{message.from.first_name} enter /programmingjoke to suit yourself and you can enter /quit to end")
         when '/quit'
-          bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
-        i wish you did not press that,you can reconsider!!,bye anyways")
-        when '/programmersjoke'
+          bot.api.send_message(chat_id: message.chat.id, text: "Mr #{message.from.first_name}, 😢 🤖 Amazingbot wish you did not press that, you can reconsider!!😍, bye anyways🎉")
+        when '/programmingjoke'
           joke = Programmer.new
           bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
         when '/quotes'
@@ -31,8 +26,8 @@ class Amazingbot
         when '/normaljoke'
           normal = Normal.new
           bot.api.send_message(chat_id: message.chat.id, text: normal.random_jokes)
-        else message.text != '/programmingjoke' || '/inspirationalquotes' || '/normaljoke'
-             alert = "sorry,we have only '/quotes', '/programmingjoke','/normaljoke' at the moment"
+        else message.text != '/programmingjoke' || '/quotes' || '/normaljoke'
+             alert = "Sorry Mr.#{message.from.first_name}, this 🤖 have only (/quotes) |==| (/programmingjoke) |==| and (/normaljoke) at the moment. But currently working on interesting features and will be made available soon!🎉 😍 "
              bot.api.send_message(chat_id: message.chat.id, text: alert)
         end
       end
