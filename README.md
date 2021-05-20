@@ -28,6 +28,9 @@ This Bot has 6 commands
 
 ### How to Run Tests
 
+#### Installing Rspec
+Boot up your terminal and punch in `gem install rspec` to install RSpec. Once that’s done, you can verify your version of RSpec with `rspec --version`, which will output the current version of each of the packaged gems. Take a minute also to hit `rspec --help` and look through the various options available.
+
 - You need to run 
 ```
 $ gem install rspec on your system using any code editor of your choice or your terminal
