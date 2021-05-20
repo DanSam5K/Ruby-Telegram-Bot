@@ -8,8 +8,11 @@ describe Amazingbot do
         expect(quote).to be_a Quotes
       end
 
-      it 'makes and instance of quotes not joke' do
+      it 'makes and instance of Quotes not Programmer joke' do
         expect(quote).not_to be_a Programmer
+      end
+      it 'makes and instance of Quotes not Normal joke' do
+        expect(quote).not_to be_a Normal
       end
 
     end
