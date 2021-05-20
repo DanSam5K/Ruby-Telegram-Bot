@@ -67,7 +67,7 @@ Run `bin/main.rb` to start the bot.<br>
 **Step 5**<br>
 You can use the commands defined in the [Available commands section](#Commands-to-Run-the-Bot) defined above.<br>
 
-#### This Bot is Live Now. You can click [Here](https://t.me/ds_joker_bot) to Play with Bot
+#### This Bot is Live Now. You can click [🤖 here](https://t.me/ds_joker_bot) or [🤖 this](https://t.me/Amazingjoker_bot) to Play with Bot
 
 ## Authors
 

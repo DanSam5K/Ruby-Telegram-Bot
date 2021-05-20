@@ -14,7 +14,6 @@ describe Amazingbot do
       it 'makes and instance of Quotes not Normal joke' do
         expect(quote).not_to be_a Normal
       end
-
     end
     describe '#random_quotes' do
       it 'it gives back a random joke as a String' do
