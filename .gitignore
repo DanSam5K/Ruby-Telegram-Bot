@@ -10,7 +10,7 @@
 /test/version_tmp/
 /tmp/
 config.rb
-
+lib/.gitkeep
 # Used by dotenv library to load environment variables.
 # .env
 
