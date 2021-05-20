@@ -80,7 +80,7 @@ You can use the commands defined in the [Available commands section](#Commands-t
 - Go to the repo
 - Open a pull request
 or
-- Feel free with a click [issues page](https://github.com/Ruby-Telegram-Bot/issues).
+- Feel free with a click [issues page](https://github.com/DanSam5K/Ruby-Telegram-Bot/issues).
 
 Contributions, issues and feature requests are welcome!
 
